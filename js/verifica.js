@@ -15,6 +15,8 @@ function verificaSeOchutePossuiUmValorValido(chute) {
         document.body.innerHTML =`
         <h1>voce acertou!</h1>
         <h2> O numero secreto era ${NumeroSecreto}</h2>
+
+        <button id="jogar-novamente" class="btn-jogar">Jogar novamente</button>
         `
     }else if(numero> NumeroSecreto){
         elementoChute.innerHTML +=`<div>O número secreto é menor <i class="fa-solid fa-down-long"></i></div>`
@@ -35,3 +37,10 @@ function numeroInvalido(numero) {
 function chuteInvalido(numero) {
     return Number.isNaN(numero);
 }
+
+
+document.body.addEventListener('click', e=>{
+    if(e.target.id=='jogar-novamente'){
+        window.location.reload()
+    }
+})
