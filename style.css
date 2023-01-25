@@ -54,4 +54,11 @@ h2{
     margin-top:15px ;
 
 }
+.btn-jogar-game-over{
+    background-color: rgb(143, 143, 143);
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-top:15px ;
+}
 

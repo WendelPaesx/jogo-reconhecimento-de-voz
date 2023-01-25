@@ -5,7 +5,7 @@ var maiorValor = 1000
 function gerarNumeroAleatorio() {
     return parseInt(Math.random() * 1000)
 }
-console.log(NumeroSecreto)
+
 
 
 var menorNumero = document.querySelector("#menor-valor")

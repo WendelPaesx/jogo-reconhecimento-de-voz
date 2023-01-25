@@ -2,8 +2,20 @@ function verificaSeOchutePossuiUmValorValido(chute) {
     var numero = +chute
 
     if (chuteInvalido(numero)) {
-        console.log("valor invalido");
-        elementoChute.innerHTML += `<div>Valor invalido</div>`
+        
+        
+        if(chute=== "game over"){
+            document.body.innerHTML=`
+            <h2>GAME OVER!!!</h2>
+            <h3>Pressione o botão para jogar novamente</h3>
+            <button id="jogar-novamente" class="btn-jogar-game-over">Jogar novamente</button>`
+            document.body.style.backgroundColor="black";
+
+
+
+        }else{
+            elementoChute.innerHTML += `<div>Valor invalido</div>`
+        }
         return
     }
 
